@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOCK THE F**K IN - Alarm Effect</title>
     <style>
-        /* Hide the scrollbar */
+        /* Hide scrollbar */
         html, body {
             overflow: hidden;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            background-color: black;
+            width: 100vw;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             text-align: center;
-            flex-direction: column;
+            background-color: black;
             font-family: Arial, sans-serif;
         }
 
         .text {
-            font-size: 3rem;
+            font-size: 10vw; /* Scale text dynamically */
             font-weight: bold;
-            letter-spacing: 5px;
+            letter-spacing: 1vw; /* Adjust spacing dynamically */
             color: white;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
             animation: glow 0.5s infinite alternate ease-in-out;
+            white-space: nowrap; /* Prevent line breaks */
+            width: 100%; /* Ensure it stretches */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .subtext {
-            font-size: 1.5rem;
+            font-size: 3vw; /* Scale subtext dynamically */
             font-weight: bold;
             color: white;
-            margin-top: 10px;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
             animation: glow 0.5s infinite alternate ease-in-out;
+            position: absolute;
+            bottom: 5%;
         }
 
         @keyframes glow {
