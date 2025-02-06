@@ -13,35 +13,35 @@
             width: 100vw;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
             background-color: black;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         .text {
-            font-size: 7.5vw; /* Adjusted to fit width */
+            font-size: 4.0vw; /* Adjusted to fit fully */
             font-weight: bold;
-            letter-spacing: 0.8vw; /* Fine-tuned spacing */
+            letter-spacing: 0.4vw; /* Reduced spacing for better fit */
             color: white;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
             animation: glow 0.5s infinite alternate ease-in-out;
-            white-space: nowrap; /* Prevent line breaks */
-            max-width: 95vw; /* Ensures the text doesn't overflow */
+            white-space: nowrap; /* Keeps text in one line */
+            width: 100%; /* Ensures full width */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .subtext {
-            font-size: 2.5vw; /* Scaled-down subtext */
+            font-size: 1.5vw; /* Adjusted to stay visible */
             font-weight: bold;
             color: white;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
             animation: glow 0.5s infinite alternate ease-in-out;
-            position: absolute;
-            bottom: 5%;
+            margin-top: 2vh; /* Spacing to ensure visibility */
         }
 
         @keyframes glow {
