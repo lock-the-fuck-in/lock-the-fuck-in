@@ -21,21 +21,22 @@
         }
 
         .text {
-            font-size: 10vw; /* Scale text dynamically */
+            font-size: calc(10vw + 1vh); /* Dynamically increase font size */
             font-weight: bold;
-            letter-spacing: 1vw; /* Adjust spacing dynamically */
+            letter-spacing: calc(1vw + 0.2vh); /* Dynamic letter spacing */
             color: white;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
             animation: glow 0.5s infinite alternate ease-in-out;
-            white-space: nowrap; /* Prevent line breaks */
-            width: 100%; /* Ensure it stretches */
+            white-space: nowrap; /* Ensure text stays in one line */
+            width: 100%; /* Ensures full width */
             display: flex;
             justify-content: center;
             align-items: center;
+            text-transform: uppercase;
         }
 
         .subtext {
-            font-size: 3vw; /* Scale subtext dynamically */
+            font-size: calc(3vw + 1vh); /* Scale subtext dynamically */
             font-weight: bold;
             color: white;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
